@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js">
+        </script>
+        
+        
+            
+        <style>
+            #redball{
+                position:absolute;
+            }
+        </style>        
+        
+        <script>
+            
+            function pfadeOut(){
+                var myparagraph = $("#gt");
+                myparagraph.fadeOut();
+            }
+        </script>
+      
+    </head>
+    
+    <body>
+    
+        <button onclick="sayhello()">seriously</button>
+        
+        <button onclick="moveleft()">left center</button>
+        
+        <button onclick="moveright()">right center</button>
+        
+        <button onclick="moveup()">top center</button>
+        
+        <button onclick="movedown()">down center</button>
+        
+        <button onclick="moveupoverright()">right upper corner</button>
+        
+        <button onclick="movedownoverright()">right lower corner</button>
+        
+        <button onclick="moveupoverleft()">left upper corner</button>
+        
+        <button onclick="movedownoverleft()">left lower corner</button>
+        
+        <button onclick="movetriangle()">triangle</button>
+        
+        <button onclick="movesquare()">square</button>
+        
+        <button onclick="moveoctagon()">octagon</button>
+        
+        <img id="redball" src="http://storage.googleapis.com/ics-redball/redball.jpg"/>
+        
+        <p id="gt">
+            my first paragraph
+        </p>
+        
+        <p>
+            my second paragraph
+        </p>
+        
+        <p>
+        
+         <button onclick="pfadein()">fade in</button>
+        
+         <button onclick="pfadeOut()">fade out</button>
+        
+        </p>
+
+    </body>
+</html>
