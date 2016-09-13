@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js">
+        </script>
+        <script type="text/Javascript">
+        function moveleft(){ 
+            redball.left = redball.left + 1;
+            redball.left = redball.left + 1;
+            redball.left = redball.left + 1;
+            }
+        function moveright() {
+            redball.left = redball.left - 1;
+            redball.left = redball.left - 1;
+            redball.left = redball.left - 1;
+            
+        }
+        function moveup(){
+            redball.top = redball.top -1;
+            redball.top = redball.top -1;
+            redball.top = redball.top -1;
+        }
+        function movedown(){
+            redball.top = redball.top +1;
+            redball.top = redball.top +1;
+            redball.top = redball.top +1;
+        }
+        function thatway(){
+            redball.top = redball.top +1;
+            redball.left = redball.left -1;
+            redball.top = redball.top +1;
+            redball.left = redball.left -1;redball.top = redball.top +1;
+            redball.left = redball.left -1;
+        }
+        function thisway(){
+            redball.top = redball.top -1;
+            redball.left = redball.left +1;
+             redball.top = redball.top -1;
+            redball.left = redball.left +1; redball.top = redball.top -1;
+            redball.left = redball.left +1;
+        }
+        function canyoumove(){
+            redball.top = redball.top +1;
+            redball.left = redball.left +1;
+            redball.top = redball.top +1;
+            redball.left = redball.left +1;redball.top = redball.top +1;
+            redball.left = redball.left +1;
+        }
+        function yeet(){
+            redball.top = redball.top -1;
+            redball.left = redball.left -1;
+            redball.top = redball.top -1;
+            redball.left = redball.left -1;redball.top = redball.top -1;
+            redball.left = redball.left -1;
+        }
+        
+      </script>
+        
+            <title>Basic HTML
+            </title>
+            </head>
+                <body>
+                    <button onclick="moveright()"> Move LEFT </button>
+                    <button onclick="moveleft()"> Move Right </button>
+                      <button onclick="moveup()"> Move Up </button>
+                      <button onclick="movedown()"> Move Down </button>
+                      <button onclick="thatway()"> Down Left </button>
+                      <button onclick="thisway()"> Up Right </button>
+                      <button onclick="canyoumove()"> Down Right </button>
+                      <button onclick="yeet()"> Up Left </button>
+                    <img id="redball" src="http://storage.googleapis.com/ics-redball/redball.jpg"/>
+                </body>
+</html>
